@@ -47,7 +47,7 @@ body {
 
 
 .headline>span {
-    width: 524px;
+    /* width: 524px; */
     height: 25px;
     font-family: SUIT;
     font-size: 20px;
@@ -137,8 +137,11 @@ body {
 
 .main-img {
     width: 100%;
-    height: 941px;
+    height: auto;
+    min-height: 100vh;
     background-image: url('../img/main.png');
+    background-size: cover;
+    background-position: center center;
 }
 
 .img-section-container {
@@ -259,10 +262,12 @@ body {
     padding: 504px 0 65px 0;
     position: relative;
     float: left;
+    justify-content: center;
+    display: flex;
     background-image: url('../img/ss_1.png');
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .img-section6 {
@@ -274,10 +279,12 @@ body {
     padding: 504px 0 65px 0;
     position: relative;
     float: left;
-    background-image: url('../img/ss_2.png');
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    background-image: url('../img/ss_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .img-section7 {
@@ -289,10 +296,12 @@ body {
     padding: 504px 0 65px 0;
     position: relative;
     float: left;
-    background-image: url('../img/ss_3.png');
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    background-image: url('../img/ss_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .img-section8 {
@@ -304,10 +313,12 @@ body {
     padding: 504px 0 65px 0;
     position: relative;
     float: left;
-    background-image: url('../img/ss_4.png');
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    background-image: url('../img/ss_4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .img-section-container-black {
@@ -377,3 +388,23 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
+@media all and (max-width: 1919px) {
+    .main-img {
+        /* background-image: url(../img/main_copy.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: auto;
+        min-height: 100vh;
+        width: 100%; */
+    }
+}
+
+/* ~480 //mobile
+~768 //tablet
+~1200 //labtob
+~1600 //desktop
+~1920 //large
+more */

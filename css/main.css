@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'ABCFavorit';
+    src: local('ABCFavorit'),
+        url(../font/ABCFavorit-regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABCFavorit';
+    src: local('ABCFavorit'),
+        url(../font/ABCFavorit-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT';
+    src: local('SUIT'),
+        url(../font/SUIT-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: inherit !important;
+    min-height: 100vh;
+}
+
+.headline {
+    width: 100%;
+    /* height: 70px; */
+    padding-top: 21px;
+    padding-bottom: 21px;
+    /* padding-left: 40%;  */
+    display: table;
+    background-color: #ebebeb
+}
+
+
+.headline>span {
+    width: 524px;
+    height: 25px;
+    font-family: SUIT;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #707070;
+    display: table-cell;
+    vertical-align: middle;
+    /* align */
+}
+
+.menu-bar {
+    width: 100%;
+    height: 70px;
+    /* margin: 70px 0 0; */
+    padding: 12px 27.7px 12px 22px;
+    background-color: #fff;
+}
+
+.menu-active {
+    width: 5%;
+    height: 46px;
+    margin: 0 31px 0 0;
+    padding: 10px 18px 9px;
+    background-color: #000;
+    position: relative;
+    float: left;
+}
+
+.menu-active>span {
+    /* width: 56px; */
+    height: 27px;
+    font-family: ABCFavorit;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    width: 5%;
+    height: 46px;
+    margin: 0 31px 0 0;
+    padding: 10px 18px 9px;
+    position: relative;
+    float: left;
+}
+
+.menu>span {
+    /* width: 92px; */
+    height: 27px;
+    /* margin: 10px 26px 9px 31px; */
+    font-family: ABCFavorit;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-icon {
+    width: 3%;
+    height: 46px;
+    padding-top: 10px;
+    position: relative;
+    float: right;
+}
+
+.main-img {
+    width: 100%;
+    height: 941px;
+    background-image: url('../img/main.png');
+}
+
+.img-section-container {
+    width: 100%;
+}
+
+.img-section1 {
+    width: 25%;
+    /* width: 480px; */
+    height: 615px;
+    /* margin: 941px 0 146px; */
+    padding: 504px 0 65px 0;
+    position: relative;
+    float: left;
+    background-image: url('../img/live.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.img-section2 {
+    width: 25%;
+    /* width: 480px; */
+    height: 615px;
+    /* margin: 941px 0 146px; */
+    padding: 504px 0 65px 0;
+    position: relative;
+    float: left;
+    background-image: url('../img/new.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.img-section3 {
+    width: 25%;
+    /* width: 480px; */
+    height: 615px;
+    /* margin: 941px 0 146px; */
+    padding: 504px 0 65px 0;
+    position: relative;
+    float: left;
+    background-image: url('../img/re.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.img-section4 {
+    width: 25%;
+    /* width: 480px; */
+    height: 615px;
+    /* margin: 941px 0 146px; */
+    padding: 504px 0 65px 0;
+    position: relative;
+    float: left;
+    background-image: url('../img/magazine.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.img-box {
+    width: 8%;
+    height: 46px;
+    padding: 9px 42px 12px 43px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    /* display: table; */
+}
+
+.img-box>span {
+    font-family: SUIT;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    /* display: table-cell;
+    vertical-align: middle; */
+}

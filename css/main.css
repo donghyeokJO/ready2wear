@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ABCFavorit';
     src: local('ABCFavorit'),
-        url(../font/ABCFavorit-regular.otf) format('opentype');
+        url(../font/ABCFavorit-Light.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }

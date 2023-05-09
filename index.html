@@ -5,7 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="user-scalable=0;"/>
+    
+    <meta content="yes" name="apple-mobile-web-app-capable" />  
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    
     <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -15,6 +20,7 @@
                 'opsz' 48
         }
     </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,6 +46,16 @@
             <span>STORE</span>
         </div>
 
+        <span class="material-symbols-outlined" id="hamburger">
+            menu
+        </span>
+
+        <span class="material-symbols-outlined" id="search">
+            search
+        </span>
+
+        <img id="mob_logo" src="img/logo.png"/>
+
 
         <div class="menu-icon">
             <span class="material-symbols-outlined">
@@ -62,6 +78,50 @@
             </span>
         </div>
 
+    </div>
+
+    <div id = "mob_menu">
+        <div class="mob_menu_div" id="mob_menu_div1">
+            <span class="material-symbols-outlined" id="close">
+                close
+            </span>
+            <span id="cart">CART</span>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div class="mob_menu_div">
+            <img src="img/logo.png">
+        </div>
+        <hr>
+        <div class="mob_menu_div2">
+            <span class="RED">WOOL SILK</span>
+            <span class="BLACK">SHOP</span>
+            <span class="BLACK">PREVIEW</span>
+            <span class="BLACK">LIVE</span>
+            <span class="BLACK">EDITORIAL</span>
+            <span class="BLACK">ABOUT</span>
+        </div>
+        <hr>
+        <div class="mob_menu_div2" id="margin-bot">
+            <div>
+                <span class="small">Contact</span>
+            </div>
+            <div>
+                <span class="small">Instagram</span>
+            </div>
+            
+            <div>
+                <span class="small">Youtube</span>
+            </div>
+            
+            <div>
+                <span class="small">Naver Blog</span>
+            </div>
+            
+            
+        </div>
+        <span class="r2wcokr">@r2w.co.kr</span>
     </div>
 
     <div class="main-img"></div>
@@ -112,7 +172,7 @@
         </div>
     </div>
 
-    <div class="img-section-container-black">
+    <div class="img-section-container-black" id="large">
         <div class="lower">
             <img src="img/logo_white.png">
         </div>
@@ -138,12 +198,63 @@
         </div>
     </div>
 
+    <div id="mobile">
+        <div class="lower" id="logo_white">
+            <img  src="img/logo_white.png">
+        </div>
+        <div class="lower">
+            <span>
+                CLIENTELE CARE
+            </span>
+        </div>
+        <div class="lower">
+            <span>
+                SHIPPING | RETURNS
+            </span>
+        </div>
+        <div class="lower">
+            <span>
+                PRIVACY POLICIES
+            </span>
+        </div>
+        <div class="lower" id="small">
+            <img src="img/insta.png">
+            <img src="img/youtube.png">
+            <img src="img/blog.png">
+        </div>
+    </div>
+
     <div class="footer">
         <span>
             We give 1% of our profits to ACTION FOR CONSERVATION.
         </span>
     </div>
+    <script>
+        $(document).ready(function(){
+            $('#hamburger').click(function() {
+                $('#mob_menu').css('display', "block");
+                $('.menu-bar').css('display', 'none');
+            });
 
+            $('#close').click(function() {
+                $('#mob_menu').css('display', "none");
+                $('.menu-bar').css('display', 'block');
+            });
+
+            var offset = $('#mob_menu').offset();
+            var a = $('.headline').offset();
+
+            $(window).scroll(function() {
+                if($(document).scrollTop() > offset.top){
+                    // $('#mob_menu').offset({top:a.top});
+                    // $('.headline').addClass('menu_fixed');
+                    $('#mob_menu').addClass('menu_fixed');
+                }
+                else {
+                    $('#mob_menu').removeClass('menu_fixed');
+                }
+            })
+        })
+    </script>
 </body>
-
 </html>

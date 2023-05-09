@@ -896,6 +896,11 @@ hr {
         font-size: 15px;
         display: flex;
         padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    #small {
+        padding-left: 5%;
     }
 
     .footer > span {
@@ -945,17 +950,6 @@ hr {
         margin: 0;
         /* margin-bottom: 10%; */
         /* padding-bottom: 10%; */
-    }
-
-    .lower > span {
-        font-size: 15px;
-        display: flex;
-        padding-top: 5%;
-        padding-left: 10%;
-    }
-
-    #small {
-        padding-left: 10%;
     }
 } 
 
@@ -1121,11 +1115,11 @@ hr {
         font-size: 15px;
         display: flex;
         padding-top: 5%;
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     #small {
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     .footer > span {

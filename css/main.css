@@ -631,7 +631,7 @@ hr {
     }
 }
 
-@media all and (max-width: 1280px) and (min-width: 431px) {
+@media all and (max-width: 1280px) and (min-width: 768px) {
     body {
         overflow-x:hidden;
     }
@@ -644,7 +644,7 @@ hr {
         display:block;
     }
 
-    #menu1 {
+    /* #menu1 {
         display: none;
     }
 
@@ -654,17 +654,18 @@ hr {
 
     #menu3 {
         display: none;
-    }
+    } */
 
     .menu-icon {
-        width: 3%;
+        width: 6%;
         height: 46px;
         padding-top: 22px;
-        margin-left: 90%;
-        position: absolute;
+        /* margin-left: 90%; */
+        float: right;
+        /* position: absolute; */
     }
 
-    #txt_1 {
+    /* #txt_1 {
         display: none;
     }
 
@@ -678,7 +679,7 @@ hr {
 
     #txt_4 {
         display: none;
-    }
+    } */
 
     .img-section1 {
         width: 25%;
@@ -719,6 +720,175 @@ hr {
     .lower > span {
         font-size: 15px;
     }
+}
+
+
+@media all and (max-width: 767px) and (min-width: 431px) {
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+        max-width: 767px;
+        /* width: 100%; */
+        margin: 0; 
+        padding: 0;
+    }
+
+    .headline {
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+
+    #first_span {
+        display: none;
+    }
+
+    #second_span {
+        display: block;
+    }
+
+    #menu1 {
+        display: none;
+    }
+
+    #menu2 {
+        display: none;
+    }
+
+    #menu3 {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 3%;
+        height: 46px;
+        padding-top: 22px;
+        margin-left: 85%;
+        position: absolute;
+    }
+
+    #txt_1 {
+        display: none;
+    }
+
+    #txt_2 {
+        display: none;
+    }
+
+    #txt_3 {
+        display: none;
+    }
+
+    #txt_4 {
+        display: none;
+    }
+
+    .main-img {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-image: url('../img/main_copy.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .img-section1 {
+        width: 50%;
+        /* height: 276px; */
+        background-size: cover;
+        background-position: center;
+        /* padding: 10% 0 0 0; */
+    }
+    .img-section2 {
+        width: 50%;
+        /* height: 276px; */
+        background-size: cover;
+        background-position: center;
+    }
+    .img-section3 {
+        width: 50%;
+        /* height: 276px; */
+        background-size: cover;
+        background-position: center;
+    }
+    .img-section4 {
+        width: 50%;
+        /* height: 276px; */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-box {
+        width: 40%;
+        height: 46px;
+        border: solid 1px #e6e6e6;
+        background-color: #fff;
+        margin-top: 100%;
+    }
+
+    .img-section5 {
+        width: 42%;
+        height: 300px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 5% 0 0 0;
+    }
+    .img-section6 {
+        width: 42%;
+        height: 300px;
+        padding: 5% 0 0 0;
+        margin-right: 5%;
+    }
+    .img-section7 {
+        width: 42%;
+        height: 300px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 0 5% 0;
+    }
+    .img-section8 {
+        width: 42%;
+        height: 300px;
+        padding: 0 0 5% 0;
+        margin-right: 5%;
+    }
+    
+    .lower {
+        width: 100%;
+        justify-content: left;
+        background-color: black;
+        /* box-sizing: border-box; */
+        border: 1px solid #fff;
+        align-items: center;
+        /* padding: 0; */
+    }
+
+    .lower > img {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        vertical-align: center;
+    }
+    
+    .img-section-container-black {
+        background-color: #000;
+        margin-top: 40%;
+        width:100%
+    }
+
+    .lower > span {
+        font-size: 15px;
+        display: flex;
+        padding-top: 5%;
+    }
+
+    .footer > span {
+        font-size: 15px;
+    }
 
     #large {
         display: none;
@@ -747,11 +917,24 @@ hr {
         display: block;
         float: left;
         width: 17%;
-        /* padding-top: 10px; */
+        padding-top: 20px;
         padding-left: 22%;
     }
-}
 
+    .RED {
+       font-size: 50px;
+    }
+
+    .BLACK {
+        font-size: 50px;
+    }
+
+    #margin-bot {
+        margin: 0;
+        /* margin-bottom: 10%; */
+        /* padding-bottom: 10%; */
+    }
+} 
 
 
 @media all and (max-width: 430px) {
